@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AF9F3B3-88E2-4D77-8936-3A20EB47C90A}|TodoAPI\\TodoAPI.csproj|c:\\users\\srikarthick\\source\\repos\\todoapi\\todoapi\\controllers\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AF9F3B3-88E2-4D77-8936-3A20EB47C90A}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\controllers\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AF9F3B3-88E2-4D77-8936-3A20EB47C90A}|TodoAPI\\TodoAPI.csproj|c:\\users\\srikarthick\\source\\repos\\todoapi\\todoapi\\repositories\\todorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AF9F3B3-88E2-4D77-8936-3A20EB47C90A}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\repositories\\todorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AF9F3B3-88E2-4D77-8936-3A20EB47C90A}|TodoAPI\\TodoAPI.csproj|c:\\users\\srikarthick\\source\\repos\\todoapi\\todoapi\\interfaces\\itodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AF9F3B3-88E2-4D77-8936-3A20EB47C90A}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\interfaces\\itodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AF9F3B3-88E2-4D77-8936-3A20EB47C90A}|TodoAPI\\TodoAPI.csproj|c:\\users\\srikarthick\\source\\repos\\todoapi\\todoapi\\dto\\todoitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AF9F3B3-88E2-4D77-8936-3A20EB47C90A}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\dto\\todoitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AF9F3B3-88E2-4D77-8936-3A20EB47C90A}|TodoAPI\\TodoAPI.csproj|c:\\users\\srikarthick\\source\\repos\\todoapi\\todoapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AF9F3B3-88E2-4D77-8936-3A20EB47C90A}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AF9F3B3-88E2-4D77-8936-3A20EB47C90A}|TodoAPI\\TodoAPI.csproj|c:\\users\\srikarthick\\source\\repos\\todoapi\\todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AF9F3B3-88E2-4D77-8936-3A20EB47C90A}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\TodoAPI\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\TodoAPI\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "TodoAPI\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T11:15:27.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\TodoAPI\\Program.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\TodoAPI\\Program.cs",
+              "RelativeToolTip": "TodoAPI\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T04:55:58.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ITodo.cs",
+              "DocumentMoniker": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\TodoAPI\\Interfaces\\ITodo.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Interfaces\\ITodo.cs",
+              "ToolTip": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\TodoAPI\\Interfaces\\ITodo.cs",
+              "RelativeToolTip": "TodoAPI\\Interfaces\\ITodo.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T04:47:34.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TodoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\TodoAPI\\Repositories\\TodoRepository.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Repositories\\TodoRepository.cs",
+              "ToolTip": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\TodoAPI\\Repositories\\TodoRepository.cs",
+              "RelativeToolTip": "TodoAPI\\Repositories\\TodoRepository.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAWwCsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T04:46:37.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TodoItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\TodoAPI\\Controllers\\TodoItemsController.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Controllers\\TodoItemsController.cs",
+              "ToolTip": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\TodoAPI\\Controllers\\TodoItemsController.cs",
+              "RelativeToolTip": "TodoAPI\\Controllers\\TodoItemsController.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAmwGAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T04:45:09.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TodoItemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\TodoAPI\\DTO\\TodoItemDTO.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\DTO\\TodoItemDTO.cs",
+              "ToolTip": "C:\\Users\\Srikarthick\\source\\repos\\TodoAPI\\TodoAPI\\DTO\\TodoItemDTO.cs",
+              "RelativeToolTip": "TodoAPI\\DTO\\TodoItemDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T04:46:01.377Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
