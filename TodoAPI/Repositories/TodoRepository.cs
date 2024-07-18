@@ -26,7 +26,6 @@ namespace TodoAPI.Repositories
                 userId = todoItem.user.Id,
             });
 
-            Console.WriteLine("User Id: "+todoItem.user.Id);
             TodoItemDTO todoItemDTO = new TodoItemDTO()
             {
                 Name = todoItem.Name,

@@ -1,0 +1,15 @@
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\bin\Debug\net8.0\NetworkUtility.exe
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\bin\Debug\net8.0\NetworkUtility.deps.json
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\bin\Debug\net8.0\NetworkUtility.runtimeconfig.json
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\bin\Debug\net8.0\NetworkUtility.dll
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\bin\Debug\net8.0\NetworkUtility.pdb
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\obj\Debug\net8.0\NetworkUtility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\obj\Debug\net8.0\NetworkUtility.AssemblyInfoInputs.cache
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\obj\Debug\net8.0\NetworkUtility.AssemblyInfo.cs
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\obj\Debug\net8.0\NetworkUtility.csproj.CoreCompileInputs.cache
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\obj\Debug\net8.0\NetworkUtility.sourcelink.json
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\obj\Debug\net8.0\NetworkUtility.dll
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\obj\Debug\net8.0\refint\NetworkUtility.dll
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\obj\Debug\net8.0\NetworkUtility.pdb
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\obj\Debug\net8.0\NetworkUtility.genruntimeconfig.cache
+C:\Users\Srikarthick\source\repos\TodoAPI\NetworkService\obj\Debug\net8.0\ref\NetworkUtility.dll

@@ -30,7 +30,7 @@ namespace TodoAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(UserDTO user)
         {
-            if (user != null)
+            if (user != null && user.Name != null && user.Email != null && user.Password != null)
             {
                 await userRepository.Add(user);
                 return Created();
