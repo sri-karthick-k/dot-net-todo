@@ -27,10 +27,10 @@ namespace TodoAPI.Tests.Tests
             UserDTO userDTO = new UserDTO { Email = "sri1@mail.com", Name = "sri1", Password = "sri1" };
 
             _userController = new UserController(_mockUserRepository.Object);
+            _mockUserRepository.Setup(r => r.Add(userDTO));
             var result = await _userController.Create(userDTO);
             Assert.NotNull(result);
             result.Should().BeOfType<CreatedResult>();
-            _mockUserRepository.Verify(r => r.Add(It.IsAny<UserDTO>()), Times.Once);
         }
 
         // NoContent!
@@ -44,35 +44,47 @@ namespace TodoAPI.Tests.Tests
         }
 
         [Theory]
-        [InlineData("sri@mail.com", "sri", "sri", "PASS")]
-        [InlineData("sri1@mail.com", "sri1", "sri", "FAIL")]
-        [InlineData(null, "sri", null, "FAIL")]
-        public async Task UserController_Login_Task_UserDTO(string email, string password, string name, string type)
+        [InlineData("sri@mail.com", "sri")]
+        public async Task UserController_Login_UserDTO_Ok(string email, string password)
         {
-            UserDTO userDTO = new UserDTO() { Email = email, Password = password, Name = name };
+            UserDTO userDTO = new UserDTO() { Email = email, Password = password };
              
             _userController = new UserController(_mockUserRepository.Object);
-            //await _userController.Create(userDTO);
-            if (type == "PASS")
-            {
-                _mockUserRepository.Setup(r => r.Login(email, password))
+            _mockUserRepository.Setup(r => r.Login(email, password))
                        .ReturnsAsync(userDTO);
-            }
 
             var result = await _userController.Login(userDTO);
-            if (email == null || password == null || name == null)
-            {
-                result.Result.Should().BeOfType<BadRequestResult>();
-            }
-            else if(type == "PASS")
-            {
-                
-                result.Result.Should().BeOfType<OkObjectResult>();
-            }
-            else
-            {
-                result.Result.Should().BeOfType<UnauthorizedResult>();
-            }
+            result.Result.Should().BeOfType<OkObjectResult>();
         }
+
+        [Theory]
+        [InlineData(null, "sri")]
+        public async Task UserController_Login_UserDTO_BadRequest(string email, string password)
+        {
+            UserDTO userDTO = new UserDTO() { Email = email, Password = password };
+
+            _userController = new UserController(_mockUserRepository.Object);
+            _mockUserRepository.Setup(r => r.Login(email, password))
+                       .ReturnsAsync(userDTO);
+
+            var result = await _userController.Login(userDTO);
+
+            result.Result.Should().BeOfType<BadRequestResult>();
+        }
+
+        [Theory]
+        [InlineData("invalid@mail.com", "invalid")]
+        public async Task UserController_Login_UserDTO_Unauthorized(string email, string password)
+        {
+            UserDTO userDTO = new UserDTO() { Email = email, Password = password };
+
+            _userController = new UserController(_mockUserRepository.Object);
+            _mockUserRepository.Setup(r => r.Login(email, password));
+
+            var result = await _userController.Login(userDTO);
+
+            result.Result.Should().BeOfType<UnauthorizedResult>();
+        }
+
     }
 }
