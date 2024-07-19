@@ -32,21 +32,48 @@ namespace TodoAPI.Controllers
             };
         }
 
+        // POST: api/TodoItems
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost]
+        public async Task<ActionResult<TodoItemDTO>> PostTodoItem(TodoItemDTO todoDTO)
+        {
+            // fetch user by id
+            var user = await todoRepository.findUserById(todoDTO.UserId);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var todoItem = new TodoItem
+            {
+                IsComplete = todoDTO.IsComplete,
+                Name = todoDTO.Name,
+                user = user,
+            };
+
+            var todoItemDTO = await todoRepository.Add(todoItem);
+
+            return Ok(todoItemDTO);
+        }
 
         // GET: api/TodoItems
         [HttpGet]
-        public async Task<IEnumerable<TodoItemDTO>> GetTodoItems(long UId)
+        public async Task<ActionResult<IEnumerable<TodoItemDTO>>> GetTodoItems(long UId)
         {
             var todos = await todoRepository.Get(UId);
-            return todos;
+            if(todos.Count() > 0)
+                return Ok(todos);
+            return NoContent();
         }
 
         // GET: api/TodoItems/5?id=1
         [HttpGet("{id}")]
-        public async Task<TodoItemDTO> GetTodoItem(long id, [FromQuery] long UId)
+        public async Task<ActionResult<TodoItemDTO>> GetTodoItem(long id, [FromQuery] long UId)
         {
             var todo = await todoRepository.GetTodo(UId, id);
-            return todo;
+            if(todo != null)
+                return Ok(todo);
+            return NoContent();
         }
 
 
@@ -62,30 +89,6 @@ namespace TodoAPI.Controllers
                 return Ok(todoItemDTO);
             }
             return NotFound();
-        }
-
-        // POST: api/TodoItems
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<TodoItemDTO>> PostTodoItem(TodoItemDTO todoDTO)
-        {
-            // fetch user by id
-            var user = await todoRepository.findUserById(todoDTO.UserId);
-            if(user == null)
-            {
-                return NotFound();
-            }
-
-            var todoItem = new TodoItem
-            {
-                IsComplete = todoDTO.IsComplete,
-                Name = todoDTO.Name,
-                user =  user,
-            };
-
-            var todoItemDTO = await todoRepository.Add(todoItem);
-
-            return Ok(todoItemDTO);
         }
 
         // DELETE: api/TodoItems/5
