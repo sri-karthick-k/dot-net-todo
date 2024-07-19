@@ -46,18 +46,6 @@ namespace TodoAPI.Repositories
             return user;
         }
 
-        public Task<UserDTO> Find(long Id)
-        {
-            throw new NotImplementedException();
-        }
-
-
-
-        public Task<UserDTO> Remove(UserDTO user)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<int> UpdateDetails(string NewPassword, string NewName, long Id)
         {
             var sql = $@"UPDATE Users SET [PASSWORD] = @NewPassword, [NAME] = @NewName WHERE [Id] = @Id";

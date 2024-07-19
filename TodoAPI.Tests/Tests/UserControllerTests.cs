@@ -74,37 +74,5 @@ namespace TodoAPI.Tests.Tests
                 result.Result.Should().BeOfType<UnauthorizedResult>();
             }
         }
-
-        [Theory]
-        [InlineData("sri@mail.com", "sri", "sri", "PASS")]
-        [InlineData("sri1@mail.com", "sri1", "sri", "FAIL")]
-        [InlineData(null, "sri", null, "FAIL")]
-        public async Task UserController_UpdateDetails_Task_UserDTO(string email, string password, string name, string type)
-        {
-            UserDTO userDTO = new UserDTO() { Email = email, Password = password, Name = name };
-
-            _userController = new UserController(_mockUserRepository.Object);
-            //await _userController.Create(userDTO);
-            if (type == "PASS")
-            {
-                _mockUserRepository.Setup(r => r.Login(email, password))
-                       .ReturnsAsync(userDTO);
-            }
-
-            var result = await _userController.Login(userDTO);
-            if (email == null || password == null || name == null)
-            {
-                result.Result.Should().BeOfType<BadRequestResult>();
-            }
-            else if (type == "PASS")
-            {
-
-                result.Result.Should().BeOfType<OkObjectResult>();
-            }
-            else
-            {
-                result.Result.Should().BeOfType<UnauthorizedResult>();
-            }
-        }
     }
 }
